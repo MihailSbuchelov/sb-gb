@@ -34,7 +34,7 @@ public class Buyer {
     public String showCart() {
         StringBuilder stringBuilder = new StringBuilder();
         return stringBuilder
-                .append("Покупатель добавил в корзину следующие товары: ")
+                .append("<h2>Покупатель добавил в корзину следующие товары:</h2><br><br>")
                 .append(shopController.getProductsCartForShow())
                 .toString();
     }

@@ -27,7 +27,7 @@ public class ShopControllerImpl implements ShopController {
 
     @RequestMapping("/assortment")
     public String showAssortment(Model model) {
-        model.addAttribute("products", productRepository.findAll());
+        model.addAttribute("products", productRepository.showProducts());
         model.addAttribute("listIdAssortment", productRepository.getListId());
         return "assortment";
     }
